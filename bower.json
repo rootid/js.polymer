@@ -1,0 +1,17 @@
+{
+  "name": "y",
+  "version": "1",
+  "description": "Test polymer",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "core-ajax": "Polymer/core-ajax#^0.5"
+  }
+}
