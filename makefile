@@ -1,4 +1,4 @@
-.PHONY : install_bower install_polymer update_polymer 
+.PHONY : install_bower install_polymer update_polymer add_elements 
 
 install_bower :
 	@echo "Installing the bower"
@@ -25,4 +25,12 @@ start_server :
 add_ajax :
 	echo @ "Adding ajax"
 	./node_modules/bower/bin/bower install --save Polymer/core-ajax#^0.5
+	./node_modules/bower/bin/bower install --save PolymerElements/iron-ajax#^1.0.0
+	./node_modules/bower/bin/bower install --save PolymerElements/paper-button#^1.0.0
+
+add_elements :
+	echo @"Adding elements"
+	./node_modules/bower/bin/bower install --save PolymerElements/iron-elements
+	./node_modules/bower/bin/bower install --save PolymerElements/paper-elements
+	./node_modules/bower/bin/bower install --save PolymerElements/gold-elements
 

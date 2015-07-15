@@ -1,0 +1,33 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="hello-element">
+  <style>
+        div {
+        display: inline-block;
+        background-color: #ccc;
+        border-radius: 8px;
+        padding: 4px;
+      }
+ </style>
+
+ <template>
+   <div>
+    Hello 
+     <b>{{greeting}}</b>
+     <p>
+     This is a greeting paragraph 
+     </p>
+   </div>
+ </template>
+
+
+   <script>
+   // register a new element called proto-element
+    Polymer({
+         is: "hello-element" ,
+         ready : function() {
+           this.greeting = "world";
+         }
+       });
+   </script>
+</dom-module>

@@ -1,0 +1,21 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="x-custom">
+
+  <template>
+    <button on-click="handleClick">Kick Me</button>
+  </template>
+
+  <script>
+
+    Polymer({
+      is: 'x-custom',
+      handleClick: function() {
+        alert('KIIIIIIIIIck!');
+      }
+
+    });
+
+  </script>
+
+</dom-module>
