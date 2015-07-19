@@ -1,0 +1,24 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="gmap-ele" extends="google-map" >
+
+<template>
+  <style>
+      google-map {
+				display : block;
+        height: 600px;
+        width : 200px;
+      }
+    </style>
+    <google-map latitude="37.77493" longitude="-122.41942"></google-map>
+</template>
+
+<script>
+	Polymer({
+			is: "gmap-ele",
+			ready: function() {
+	  }
+	});
+</script>
+  
+</dom-module>

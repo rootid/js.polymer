@@ -34,3 +34,6 @@ add_elements :
 	./node_modules/bower/bin/bower install --save PolymerElements/paper-elements
 	./node_modules/bower/bin/bower install --save PolymerElements/gold-elements
 
+add_goog_elements:
+	echo @"Installing google elements"
+	./node_modules/bower/bin/bower install --save GoogleWebComponents/google-map 
