@@ -3,14 +3,24 @@
 <dom-module id="gmap-ele" extends="google-map" >
 
 <template>
-  <style>
+
+
+ <style>
       google-map {
-				display : block;
-        height: 600px;
+        height: 200px;
         width : 200px;
+			  display : block; 
       }
     </style>
-    <google-map latitude="37.77493" longitude="-122.41942"></google-map>
+    <google-map disable-default-ui zoom="15"></google-map>
+		<script>
+      var map = document.querySelector('google-map');
+      map.latitude = 37.77493;
+      map.longitude = -122.41942;
+      map.addEventListener('google-map-ready', function(e) {
+        alert('Map loaded!');
+      });
+</script>
 </template>
 
 <script>
@@ -19,6 +29,7 @@
 			ready: function() {
 	  }
 	});
+
 </script>
   
 </dom-module>

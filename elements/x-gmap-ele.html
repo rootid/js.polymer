@@ -1,0 +1,35 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="x-gmap-ele">
+
+ <template is="dom-bind">
+	<style>
+		google-map {
+		  height: 200px;
+		  width : 200px;
+		  display : block; 
+		}
+	</style>
+      <google-map-search map="{{map}}" query="Pizza"
+                         result="{{result}}"></google-map-search>
+      <google-map map="{{map}}" latitude="37.779"
+                  longitude="-122.3892"></google-map>
+      <div>Result:
+        <span>{{result.latitude}}</span>,
+        <span>{{result.longitude}}</span>
+      </div>
+    <script>
+      document.querySelector('google-map-search').search();
+    </script>
+</template>
+
+<script>
+	Polymer({
+			is: "x-gmap-ele",
+			ready: function() {
+	  }
+	});
+
+</script>
+  
+</dom-module>
